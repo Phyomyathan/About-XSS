@@ -1,0 +1,69 @@
+XSS- Cross Site Scripting
+Cross Site Scripting အေျခခံ
+Cross Site Scripting
+
+user တစ္ေယာက္က milicious data ေတြကို website ထဲကိုထည္႔တဲ႔အခါ XSS ဆိိုတာကိုေတြ႔ရပါတယ္
+Xss တိုက္ခုိက္ျခင္းဟာ အလြန္ popular ျဖစ္တဲ႔ တိုက္ခိုက္နည္းတစ္ခုျဖစ္ျပီး website ၾကီးၾကီးေတြေတာင္ခံသြားရတတ္ပါတယ္
+ေအာက္က ဆရာကီးေတြလည္းပါဖူးတာေပါ႔
+FBI,CNN,Ebay,Apple,Microsoft,နဲ႔ AOL
+website ေတြရဲ႕ vul ျဖစ္မ်ားတဲ႔ fetaure တစ္ခုျဖစ္တဲ႔ xss တိုက္ခိုက္နည္းကေတာ႔ ေအာက္ကဟာေတြကေနျဖစ္သြားတာပါ
+
+Search Engines
+Login Forms
+Comment Fields
+
+XSS တိုက္ခိုက္နည္း သံုးနည္းရွိပါတယ္
+
+1->Local - Local attack
+2->Non-Persistent attack
+3->Persistent attack
+
+ပထမ ကေတာ႔ Local - Local Xss attack နည္းကေတာ႔ နည္းနည္းေလး လက္ေပါက္ကတ္ပါတယ္ျပီးေတာ႔ ေတာ္ေတာ္ေလးလည္း အသံုးျပဳတာရွားပါလာပါတယ္
+ဒီလိုုတိိုက္ခိုက္ဖို႔အတြက္ brower vulnerability exploit လိုအပ္ပါတယ္ ဒီလိုတိုက္ခိုက္နည္းျဖင္႔ hacker က worms,spambots,and backdoors ေတြကိုသင္႔ရဲ႕
+web ေပၚကေနတစ္ဆင္႔ computer ေပၚမွာ install လုပ္သြားနိုင္ပါတယ္
+
+ဒုတိယ တိုက္ခိုက္နည္းကေတာ႔ non-persistent လို႕ေခၚပါတယ္
+No-Persistent တိုက္ခုိက္နည္းကေတာ႔ အသံုးမ်ားတဲ႔နည္းတစ္ခုဆိုလည္းမမွားပါဘူးဗ်ာ
+တစ္ကယ္႔ website ကို ထိခိုက္ေစတာေတာ႔မဟုတ္ပါဘူး
+html or javascript code ေတြကို variable ထဲ႔ထည္႔လိုက္တဲ႔အခါမွာ ထြက္လာတဲ႔ output ကေျပာင္းလဲသြားတာကို သူငယ္ခ်င္းမ်ား ေတြျမင္ဖူးၾကမွာ
+အဲလိုတိုက္ခိုက္တာကို non-persistent attack လို႔ေခၚပါတယ္
+ဒီနည္းကေတာ႔ attacker က url ထဲကို html code ထည္႔ထားတဲ႔ အတြက္ အဲဒီ url ကိုနွိပ္တဲ႔ user ေတြကသာ ျမင္ရမွာပါ
+user က url ကို visit လုပ္တဲ႔အခ်ိန္မွာပဲ႔ active ျဖစ္တဲ႔အတြက္ သင္႔ရဲ႕ဆိုက္ေလးက ok ေနပါေသးတယ္ ဟီး ကံေကာင္းေသးတာေပါ႔ဗ်ာ
+
+တတိယနည္းကေတာ႔ persistent တိုက္ခိုက္နည္းပါပဲ႔ အဲဒီနည္းကေတာ႔ ပံုမွန္အားျဖင္႔ web application ေတြျဖစ္တဲ႔ guest books ,forums , နဲ႔ shout boxs
+လိုမ်ိဳးေတြကို အသံုးျပဳျပီး user ဖက္မွတိုက္ခိုက္သြားတာပါပဲ႔ အဲဒီနည္းကိုသံုးျပီး hacker ေတြသံုးနို္င္တဲ႔နည္းကေတာ႔
+Steal website cookies ေတြကိုခိုးတာပဲ႔ cookies ဆိုတာကိုသိၾကပါသလား ကၽြန္ေတာ္သိတာကေတာ႔ မုန္႔ ပဲ႔ ဟီး စားလို႔ရတယ္ေလ ဟုတ္ပါတယ္
+
+Cookies ဆိုတာကေတာ႔ user ကေန login ၀င္ခ်ိန္ကစျပီး website တစ္ခုထဲကေန မထြက္ခ်င္း brower ကေန user infomation ကို web browser က store လုပ္ထားတဲ႔
+data ကိုေျပာတာပါ ဒါေၾကာင္႔ cookies သံုးျပီး ေရးတဲ႔ web developer မ်ားသတိထားေစခ်င္ပါတယ္ ကၽြန္ေတာ္ကေတာ႔ $session_start() ကိုပဲ႔သံုးတယ္ ဟီး
+အဲလို cookies ကို ခိုးယူျခင္းျဖင္႔ attacker က user ရဲ႕ password ကို မသိပဲ႔ login ၀င္နိုင္မွာျဖစ္ပါတယ္ အဲဒါကိုသံုးဖို႔ http_live header နဲ႔သံုးရင္ပိုေကာင္းတယ္
+ၾကံဳတုန္းလမ္းျပေပးလိုက္တာ
+
+အဲေတာ႔ ေနာက္တစ္ဆင္႔ကေတာ႔ attacker က သင္႔ရဲ႕ဆိုက္ကို deface (အိုးမည္းသုတ္ျပီေပါ႔)
+ေက်နပ္လားဆိုေတာ႔ web ကို ရေတာ႔ အဆင္မေျပေသးဘူးတဲ႔ credit card ခိုးခ်င္ေသးတယ္တဲ႔ အဲေတာ႔ attacker က worms နဲ႔ bot ေတြကို spread လုပ္ထားခဲ႔မွာပါ
+အဆင္ေျပတယ္ဆိုရင္ backdoor ေလးေဖာက္ထားခဲ႔မွာေသခ်ာပါတယ္
+
+ဒီေလာက္ဆိုရင္ Cross Site scription အေၾကာင္းကိုေတာ္ေတာ္ေလးသိေလာက္ျပီေပါ႔ ကၽြန္ေတာ္ေတာ႔သိပ္မသိေသးဘူး ဆက္ေလ႔႔လာရေအာင္ဗ်ာ
+website တစ္ခုက xss vul ျဖစ္တယ္ဆိုတာ ကၽြန္ေတာ္တို ဘယ္လိုသိနိုင္မလဲ ဆိုတာပါ
+search လုပ္တဲ႔ ေနရာတစ္ခုကိုေတြ႔တယ္ဆိုပါစို႔ စာတစ္လံုးေလာက္ရိုက္ထည္႔ျပီးစမ္းၾကည္ပါ
+တစ္ကယ္လို႔ အဲဒီစာလံုးက ေနာက္ထပ္ page တစ္ခုေပၚကိုျပန္ေရာက္သြားတယ္ဆိုရင္ေတာ႔ အဲဒီ website ဟာ vulnerable ျဖစ္နိုင္ေျခရွိပါျပီ
+
+ဒါဆိုရင္ေနာက္တစ္ဆင္႔တက္ရေအာင္ html ကုတ္ကို ထည္႔ၾကည္႔ရေအာင္ <h1>Test by Cyberoot</h1>
+အဲဒီ html code ကိုထည္႔လိုက္လို႔ Test by Cyberoot ဆိုတာက စာလံုးအၾကီးနဲ႔ေပၚေနရင္ ေသခ်ာပါတယ္ အဲဒီ site က vulnerable ျဖစ္ေနပါတယ္
+js code နဲ႔ပါ ထပ္စမ္းၾကည္႔ရေအာင္ "<script>alert("Test by cyberoot")</script>" ဒါဆိုရင္ alert box ေလးနဲ႔ Test by cyberoot ဆိုတာတက္လာမွာပါ
+ဒီလိုတက္လာတဲ႔ vul နည္းကေတာ႔ non-persistent attack နည္းေနာ္ အေပၚမွာရွင္းျပျပီးျပီ
+
+PHP နဲ႔ JavaScript ရဲ႕ coding ကၽြမ္းက်င္မွဳအေပၚမူတည္ျပီး attacker က cookie ခိုးနိုင္တယ္ ျပီးေတာ႔ xss worms ေတြကို spread လုပ္နိုင္ပါတယ္
+xss shell ေတာင္တင္သြားနိုင္ပါတယ္
+xss အကူညီယူျပီး hacker ေတြက phishing လုပ္တဲ႔ ဥပမာကို ကၽြန္ေတာ္ျပပါမယ္
+ဆိုၾကပါစို႔ hacker တစ္ေယာက္က www.victim.com ဆိုတဲ႔ ဆိုက္က password ကို phish လုပ္ခ်င္တယ္ဆိုရင္ သူက ပထမဆံုး အဲဒီ victim.com ရဲ႕ xss vul
+ကုိရွာပါမယ္ ေတြ႔ျပီဆုိရင္ေတာ႔ Hacker လုပ္ထားတဲ႔ phishing webiste ကို ေစာေစာက victim site ကေန url link ကို redirect လုပ္ေပးလိုက္တာပါပဲ႔
+code ကုိ ဒီလုိထည္႔သြင္းလိုက္တာပါ
+
+<script>window.location ="http//phishing.com"</script>
+
+အဲလိုလုပ္ထားတဲ႔ link ကိုသြားတဲ႔အခါ တစ္ကယ္ web address ကို ဟက္ကာက encode လုပ္ထားလိုက္ရင္ user အေနနဲ႔မသိေတာ႔ပါဘူး
+ဒါဆိုရင္ website ရဲ႕ မူရင္း link က ဘယ္ကို ေရာက္မယ္ဆိုတာ မသိတဲ႔အတြက္ user အေနနဲ႔ phishing တိုက္ခိုက္ခံရဖို႔ နည္းလမ္းပိုမ်ားသြားပါတယ္
+ဒါေပမယ္ေနာက္ပိုင္းေတာ္ေတာ္မ်ားမ်ားေတာ႔ အဲဒီ phishing ကိုနားလည္လာတာေတြရပါတယ္
+အဆင္ေျပပါေစ
+Credit by CyberRoot(Myanmar Security Forum)
